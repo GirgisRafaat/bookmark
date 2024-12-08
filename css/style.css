@@ -1,0 +1,60 @@
+body {
+    background-color: #F7ECDE;
+}
+h1{
+    font-family: "Pacifico", cursive ;
+    font-weight: 500;
+    width: fit-content;
+    font-style: normal;
+    position: relative;
+    line-height: 60px;
+    font-size: 50px;
+    color: rgb(53, 46, 40);
+    /* border-bottom: dotted black 2px; */
+}
+h1::after{
+    content: " ";
+    height: 20px;
+    width: 100%;
+    color: #000000;
+    background-color: #fec260;
+    position: absolute;
+    top: 60%;
+    left:0 ;
+    z-index: -1;
+}
+p{
+    position: absolute;
+    top: 180px;
+    text-align: center;
+    padding-block: 20px;
+    border-top: dotted 2px black;
+    color: #B1AC49;
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.formtable {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    border-bottom: dotted black 2px;
+}
+.form-label {
+    font-weight: 600;
+    padding-bottom: .5rem ;
+
+}
+.form-label i{
+    padding-RIGHT: 10px;
+}
+.tablee{
+    position: absolute;
+    top: 560px;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

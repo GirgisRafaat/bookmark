@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="container d-flex justify-content-center position-relative ">
+    <h1 class="mt-5">Bookmarker</h1>
+    <p class="w-100  "> <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></p>
+    <div class="formtable  pb-3">
+        <div class="mb-3">
+            <label for="bookMarkInput" class="form-label fw-bold"> <i class="fa-solid fa-book-bookmark"></i>Site Name</label>
+            <input type="email" class="form-control " id="bookMarkInput" oninput="validate(/^\w{3,20}$/ ,this.value ,this)" placeholder="Bookmark Name">
+          </div>
+        <div class="mb-3">
+            <label for="siteUrlInput" class="form-label fw-bold"><i class="fa-solid fa-link"></i>Site URL</label>
+            <input type="email" class="form-control" id="siteUrlInput" oninput="validate(/^(www.)\w{3,40}(.com)?$/ ,this.value ,this)" placeholder="Website URL">
+            
+          </div>
+          <div class="btnn text-center">
+            <button class="btn btn-danger px-5 " onclick="addBookMark()">submit</button>
+          </div>
+          
+        
+    </div>
+    <div class="tablee">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody id="demo">
+            </tbody>
+          </table>
+    </div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/style.js"></script>
+</body>
+</html>
